@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/SetCondition.cpp
+SetCondition.h
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/SetCondition.h
+
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/SetCondition.h
+flow_conditions.h
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/flow_conditions.h
+
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/flow_conditions.cpp
+flow_conditions.h
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/flow_conditions.h
+
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/flow_conditions.h
+
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/main.cpp
+iostream
+-
+vector
+-
+flow_conditions.h
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/flow_conditions.h
+SetCondition.h
+/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/SetCondition.h
+
