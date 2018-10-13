@@ -97,6 +97,12 @@
 		<Unit filename="/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/main.cpp">
 			<Option target="general_coordinate_circle"/>
 		</Unit>
+		<Unit filename="/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/metric_conditions.cpp">
+			<Option target="general_coordinate_circle"/>
+		</Unit>
+		<Unit filename="/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/metric_conditions.h">
+			<Option target="general_coordinate_circle"/>
+		</Unit>
 		<Unit filename="/Users/hattoriatsuki/CLionProjects/general_coordinate_circle/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -9,11 +9,11 @@
 
 class SetCondition {
 public:
-    SetCondition(flow& Flow);
+    SetCondition(flowc& Flow, metricc& Metric);
 
 private:
-    void InitialCondition(flow& Flow);
-    void SetGrid(flow& Flow);
+    void InitialCondition(flowc& Flow, metricc& Metric);
+    void SetGrid(flowc& Flow);
 };
 
 

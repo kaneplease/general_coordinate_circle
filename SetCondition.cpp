@@ -2,13 +2,14 @@
 // Created by 服部篤樹 on 2018/10/12.
 //
 
+#include <cmath>
 #include "SetCondition.h"
-SetCondition::SetCondition(flow& Flow)
+SetCondition::SetCondition(flowc& Flow, metricc& Metric)
 {
-    InitialCondition(Flow);
+    InitialCondition(Flow, Metric);
 }
 
-void SetCondition::InitialCondition(flow& Flow){
+void SetCondition::InitialCondition(flowc& Flow, metricc& Metric){
     //  Reynolds number
     Flow.re = 1661.0;
     //  CFL number
@@ -24,5 +25,14 @@ void SetCondition::InitialCondition(flow& Flow){
     //  No. of Time Steps
     Flow.nlast = 100000;
     Flow.nlp = 100;
+
+    //  Set Grid Parameter
+    Metric.mx = 61;
+    Metric.my = 61;
+    Metric.rmax = 50.0;
+    Metric.drmin = 0.1/sqrt(Flow.re);
 }
 
+void SetCondition::SetGrid (flowc &Flow) {
+
+}

@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/general_coordinate_circle.dir/build.make CMakeFiles/general_coordinate_circle.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+metric_conditions.o: metric_conditions.cpp.o
+
+.PHONY : metric_conditions.o
+
+# target to build an object file
+metric_conditions.cpp.o:
+	$(MAKE) -f CMakeFiles/general_coordinate_circle.dir/build.make CMakeFiles/general_coordinate_circle.dir/metric_conditions.cpp.o
+.PHONY : metric_conditions.cpp.o
+
+metric_conditions.i: metric_conditions.cpp.i
+
+.PHONY : metric_conditions.i
+
+# target to preprocess a source file
+metric_conditions.cpp.i:
+	$(MAKE) -f CMakeFiles/general_coordinate_circle.dir/build.make CMakeFiles/general_coordinate_circle.dir/metric_conditions.cpp.i
+.PHONY : metric_conditions.cpp.i
+
+metric_conditions.s: metric_conditions.cpp.s
+
+.PHONY : metric_conditions.s
+
+# target to generate assembly for a file
+metric_conditions.cpp.s:
+	$(MAKE) -f CMakeFiles/general_coordinate_circle.dir/build.make CMakeFiles/general_coordinate_circle.dir/metric_conditions.cpp.s
+.PHONY : metric_conditions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... metric_conditions.o"
+	@echo "... metric_conditions.i"
+	@echo "... metric_conditions.s"
 .PHONY : help
 
 

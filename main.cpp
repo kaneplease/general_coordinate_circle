@@ -5,9 +5,10 @@
 
 int main() {
     //流れ場のデータをインスタンス化
-    flow Flow;
+    flowc Flow;
+    metricc Metric;
     // 初期化
-    SetCondition Set(Flow);
+    SetCondition Set(Flow, Metric);
 
 
     std::cout << Flow.cfl << std::endl;
