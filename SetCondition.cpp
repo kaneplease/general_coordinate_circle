@@ -39,16 +39,16 @@ void SetCondition::InitialCondition(flowc& Flow, metricc& Metric){
     Metric.x.resize(Metric.mx);
     Metric.y.resize(Metric.my);
     for(int i = 0; i<Metric.mx; i++){
-        Metric.x.resize(Metric.my);
-        Metric.y.resize(Metric.my);
+        Metric.x[i].resize(Metric.my);
+        Metric.y[i].resize(Metric.my);
     }
 }
 
 void SetCondition::SetGrid (flowc &Flow, metricc& Metric) {
     r.resize(mdy);
     theta.resize(mdx);
-    //std::vector<std::vector<double>>* x = &Metric.x; // アドレスコピー
-    //std::vector<std::vector<double>>* y = &Metric.y;
+    std::vector<std::vector<double>>& x = Metric.x; // アドレスコピー
+    std::vector<std::vector<double>>& y = Metric.y;
 
     int mx = Metric.mx;
     int my = Metric.my;
@@ -119,13 +119,16 @@ void SetCondition::SetGrid (flowc &Flow, metricc& Metric) {
     int i2 = 1 + 3*(mx - 1)/4;
 
     //  2D grid definition
-    for(int i = 0; i<mx; i++){
-        for(int j = 0; j<my; j++){
-            Metric.x[i][j] = r[j]*cos(theta[i]);
-            Metric.y[i][j] = r[j]
+    for(int j = 0; j<my; j++){
+        for(int i = 0; i<mx - 1; i++){
+            x[i][j] = r[j]*cos(theta[i]);
+            y[i][j] = r[j]*sin(theta[i]);
         }
+        x[mx - 1][j] = x[0][j];
+        y[mx - 1][j] = y[0][j];
     }
 
+    //  Grid extension
 
 
 
