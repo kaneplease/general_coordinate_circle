@@ -27,8 +27,8 @@ struct metric_conditions {
     int my;
     double rmax;
     double drmin;
-    std::vector x;
-    std::vector y;
+    std::vector<std::vector<double>> x;
+    std::vector<std::vector<double>> y;
 };
 typedef struct metric_conditions metricc;
 
